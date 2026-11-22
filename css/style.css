@@ -200,11 +200,11 @@ ul {
 }
 
 .btn--whatsapp {
-  background-color: #25D366;
+  background-color: #15803d;
   color: #fff;
 }
 .btn--whatsapp:hover {
-  background-color: #1da851;
+  background-color: #166534;
 }
 
 .btn--instagram {
@@ -534,8 +534,8 @@ img.imagem--indisponivel {
 .carrossel {
   position: relative;
   width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
+  max-width: 480px;
+  margin-inline: auto;
 }
 
 .carrossel__pista {
@@ -555,14 +555,15 @@ img.imagem--indisponivel {
 .carrossel__slide {
   flex: 0 0 100%;
   min-width: 100%;
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4 / 5;
   background-color: var(--cor-papel);
 }
 
 .carrossel__slide img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center;
   display: block;
 }
 
@@ -967,10 +968,6 @@ img.imagem--indisponivel {
    RESPONSIVO — Tablet (768px+)
    ======================================== */
 @media (min-width: 768px) {
-  .carrossel {
-    max-width: 720px;
-  }
-
   .carrossel__btn {
     width: 44px;
     height: 44px;
@@ -1024,24 +1021,11 @@ img.imagem--indisponivel {
 }
 
 /* ========================================
-   RESPONSIVO — Desktop (1280px+)
-   ======================================== */
-@media (min-width: 1280px) {
-  .carrossel {
-    max-width: 700px;
-  }
-}
-
-/* ========================================
    RESPONSIVO — Mobile e tablet retrato (<1024px):
    menu hamburger + ajustes de componentes
    (7 links + CTA não cabem lado a lado abaixo de 1024px)
    ======================================== */
 @media (max-width: 1023px) {
-  .carrossel {
-    max-width: 100%;
-  }
-
   .carrossel__pista {
     border-radius: 10px;
     border-width: 3px;
@@ -1192,9 +1176,13 @@ img.imagem--indisponivel {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;
+  align-items: stretch;
 }
 
 .depoimento-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   background-color: rgba(255, 247, 232, 0.84);
   border: 1px solid var(--borda-clara);
   border-left: 4px solid var(--cor-dourado);
@@ -1203,6 +1191,11 @@ img.imagem--indisponivel {
   text-align: center;
   box-shadow: var(--sombra);
   transition: box-shadow var(--transicao), transform var(--transicao), border-color var(--transicao);
+}
+
+.depoimento-card > :last-child {
+  margin-top: auto;
+  padding-top: 1rem;
 }
 .depoimento-card:hover {
   box-shadow: var(--sombra-hover);
@@ -1552,4 +1545,54 @@ img.imagem--indisponivel {
   font-size: 0.8rem;
   opacity: 0.75;
   max-width: 560px;
+}
+
+/* Foto real na seção Sobre */
+.sobre__imagem img {
+  width: 100%;
+  max-height: 460px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+/* Mapa incorporado em Contato */
+.contato__mapa {
+  margin-top: -1rem;
+  margin-bottom: 2.5rem;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 247, 232, 0.18);
+  box-shadow: var(--sombra);
+}
+
+.contato__mapa iframe {
+  display: block;
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+/* Assinatura no rodapé */
+.footer__credito {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.footer__credito a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 600;
+}
+
+.footer__credito a:hover {
+  opacity: 1;
+}
+
+/* Evita que o botão flutuante do WhatsApp cubra a assinatura no celular */
+@media (max-width: 767px) {
+  .footer {
+    padding-bottom: 5.5rem;
+  }
 }
