@@ -1,5 +1,5 @@
 /* ========================================
-   SABOR DA ROÇA — Script Principal
+   CASA DO NORTE SABOR DA ROÇA — Script Principal
    ======================================== */
 
 (function () {
@@ -33,7 +33,7 @@
     });
   });
 
-  /* Ponto de quebra do menu mobile — deve acompanhar o CSS (max-width: 1023px). */
+  /* Ponto de quebra do menu mobile — acompanha o CSS (max-width: 1023px). */
   var BREAKPOINT_MENU_MOBILE = 1024;
 
   function atualizarEstadoMenu(aberto) {
@@ -88,15 +88,18 @@
     atualizarEstadoMenu(false);
     hamburgerBtn.addEventListener('click', toggleMenu);
 
-    /* Fecha o menu ao clicar em QUALQUER link do nav (inclui o CTA do WhatsApp,
-       que abre em nova aba e antes mantinha a página travada com overflow hidden). */
+    /* Fecha o menu ao clicar em qualquer link (inclusive âncoras e WhatsApp). */
     mainNav.querySelectorAll('a').forEach(function (link) {
-      link.addEventListener('click', fecharMenu);
+      link.addEventListener('click', function () {
+        if (hamburgerBtn.getAttribute('aria-expanded') === 'true') {
+          fecharMenu(false);
+        }
+      });
     });
 
     document.addEventListener('keydown', function (e) {
       if (e.key === 'Escape' && hamburgerBtn.getAttribute('aria-expanded') === 'true') {
-        fecharMenu();
+        fecharMenu(true);
       }
     });
 
@@ -106,13 +109,12 @@
       }
 
       if (!mainNav.contains(e.target) && !hamburgerBtn.contains(e.target)) {
-        fecharMenu();
+        fecharMenu(true);
       }
     });
 
     window.addEventListener('resize', debounce(function () {
       if (window.innerWidth >= BREAKPOINT_MENU_MOBILE && hamburgerBtn.getAttribute('aria-expanded') === 'true') {
-        /* Fecha sem roubar o foco durante o redimensionamento. */
         fecharMenu(false);
         return;
       }
@@ -123,7 +125,7 @@
 
   /* ---------- Entrada suave e seção ativa ---------- */
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const elementosRevelados = document.querySelectorAll('.hero__texto, .hero__imagem, .diferencial-card, .carrossel, .sobre__imagem, .sobre__texto, .depoimento-card, .faq__item, .info-card, .contato__divisor, .contato__botoes');
+  const elementosRevelados = document.querySelectorAll('.diferencial-item, .categoria-card, .loja__conteudo, .carrossel, .avaliacao-card, .faq__atalho, .faq__item, .localizacao__card, .localizacao__mapa');
 
   if (!prefersReducedMotion && 'IntersectionObserver' in window) {
     elementosRevelados.forEach(function (elemento) {
@@ -137,7 +139,7 @@
           observer.unobserve(entrada.target);
         }
       });
-    }, { threshold: 0.12 });
+    }, { threshold: 0.1 });
 
     elementosRevelados.forEach(function (elemento) {
       observadorEntrada.observe(elemento);
@@ -151,31 +153,45 @@
           return;
         }
 
+        const alvo = '#' + entrada.target.id;
+        if (alvo === '#inicio') {
+          navLinks.forEach(function (link) {
+            link.removeAttribute('aria-current');
+          });
+          return;
+        }
+
+        const possuiLink = Array.prototype.some.call(navLinks, function (link) {
+          return link.getAttribute('href') === alvo;
+        });
+
+        if (!possuiLink) {
+          return;
+        }
+
         navLinks.forEach(function (link) {
-          const ativo = link.getAttribute('href') === '#' + entrada.target.id;
-          if (ativo) {
+          if (link.getAttribute('href') === alvo) {
             link.setAttribute('aria-current', 'location');
           } else {
             link.removeAttribute('aria-current');
           }
         });
       });
-    }, { rootMargin: '-35% 0px -55% 0px' });
+    }, { rootMargin: '-30% 0px -55% 0px' });
 
     secoes.forEach(function (secao) {
       observadorSecoes.observe(secao);
     });
   }
 
-  /* ---------- Status "Aberto agora" (fuso America/Sao_Paulo) ---------- */
-  (function atualizarStatusAberto() {
+  /* ---------- Badge dinâmico de horário (fuso America/Sao_Paulo) ---------- */
+  (function initStatusAberto() {
     var el = document.getElementById('status-aberto');
     var texto = document.getElementById('status-aberto-texto');
     if (!el || !texto) {
       return;
     }
 
-    /* Usa o horário da loja, não do visitante (turista em outro fuso via status errado). */
     function partesEmSP(data) {
       try {
         var fmt = new Intl.DateTimeFormat('pt-BR', {
@@ -192,33 +208,36 @@
           if (p.type === 'hour') out.hora = parseInt(p.value, 10);
           if (p.type === 'minute') out.minuto = parseInt(p.value, 10);
         });
+        if (out.hora === 24) out.hora = 0;
         return out;
       } catch (e) {
         return { diaSemana: '', hora: data.getHours(), minuto: data.getMinutes(), fallback: true, dia: data.getDay() };
       }
     }
 
-    var agora = new Date();
-    var sp = partesEmSP(agora);
-    var ehDomingo;
-    if (sp.fallback) {
-      ehDomingo = sp.dia === 0;
-    } else {
-      ehDomingo = sp.diaSemana.toLowerCase().indexOf('dom') === 0;
-    }
-    var hora = sp.hora + sp.minuto / 60;
-    var abre = 9;
-    var fecha = ehDomingo ? 14 : 21;
-    var aberto = hora >= abre && hora < fecha;
-
-    function fmt(h) {
+    function fmtHora(h) {
       return String(h).padStart(2, '0') + 'h';
     }
 
-    el.setAttribute('data-estado', aberto ? 'aberto' : 'fechado');
-    texto.textContent = aberto
-      ? 'Aberto agora · fecha às ' + fmt(fecha)
-      : 'Fechado agora · abre às ' + fmt(abre);
+    function atualizar() {
+      var agora = new Date();
+      var sp = partesEmSP(agora);
+      var ehDomingo = sp.fallback
+        ? sp.dia === 0
+        : sp.diaSemana.toLowerCase().indexOf('dom') === 0;
+      var hora = sp.hora + sp.minuto / 60;
+      var abre = 9;
+      var fecha = ehDomingo ? 14 : 21;
+      var aberto = hora >= abre && hora < fecha;
+
+      el.setAttribute('data-estado', aberto ? 'aberto' : 'fechado');
+      texto.textContent = aberto
+        ? 'Aberto agora • Fecha às ' + fmtHora(fecha)
+        : 'Fechado agora • Abre às ' + fmtHora(abre);
+    }
+
+    atualizar();
+    setInterval(atualizar, 60000);
   })();
 
   /* ---------- Ano automático no rodapé ---------- */
@@ -231,24 +250,26 @@
     window.addEventListener('load', function () {
       navigator.serviceWorker.register(new URL('./sw.js', window.location.href), { scope: '/' })
         .catch(function () {
-          // Ignora falha de registro em ambientes restritivos ou em páginas sem suporte.
+          // Ignora falha de registro em ambientes restritivos.
         });
     });
   }
 
-  /* ---------- Carrossel de imagens ---------- */
+  /* ---------- Carrossel acessível de fotos da loja ---------- */
   (function initCarrossel() {
     const carrossel = document.querySelector('.carrossel');
     if (!carrossel) {
       return;
     }
+
     const pista = carrossel.querySelector('.carrossel__slides');
     const slides = carrossel.querySelectorAll('.carrossel__slide');
     const btnAnterior = carrossel.querySelector('.carrossel__btn--anterior');
     const btnProximo = carrossel.querySelector('.carrossel__btn--proximo');
-    const btnPausa = carrossel.querySelector('.carrossel__btn--pausa');
+    const btnPausa = carrossel.querySelector('.carrossel__pausa');
     const pontos = carrossel.querySelectorAll('.carrossel__ponto');
     const status = document.getElementById('carrossel-status');
+    const contador = document.getElementById('carrossel-contador');
     const totalSlides = slides.length;
 
     if (!pista || !totalSlides) {
@@ -266,15 +287,16 @@
       if (indice >= totalSlides) indice = 0;
       indiceAtual = indice;
       pista.style.transform = 'translateX(-' + (indiceAtual * 100) + '%)';
-      atualizarPontos();
+      atualizarEstadoSlides();
     }
 
-    function atualizarPontos() {
+    function atualizarEstadoSlides() {
       pontos.forEach(function (ponto, i) {
         const ativo = i === indiceAtual;
         ponto.classList.toggle('carrossel__ponto--ativo', ativo);
         ponto.setAttribute('aria-current', String(ativo));
       });
+
       slides.forEach(function (slide, i) {
         const ativo = i === indiceAtual;
         if (ativo) {
@@ -285,8 +307,13 @@
           if ('inert' in slide) slide.inert = true;
         }
       });
+
       if (status) {
         status.textContent = 'Slide ' + (indiceAtual + 1) + ' de ' + totalSlides;
+      }
+
+      if (contador) {
+        contador.textContent = (indiceAtual + 1) + ' / ' + totalSlides;
       }
     }
 
@@ -302,7 +329,9 @@
     pontos.forEach(function (ponto) {
       ponto.addEventListener('click', function () {
         const indice = parseInt(ponto.getAttribute('data-indice'), 10);
-        irParaSlide(indice);
+        if (!isNaN(indice)) {
+          irParaSlide(indice);
+        }
       });
     });
 
@@ -317,23 +346,33 @@
       }
     });
 
-    /* Swipe em touch */
+    /* Swipe em touch (protegido contra divisão por zero) */
     pista.addEventListener('touchstart', function (e) {
+      if (!e.touches || !e.touches.length) return;
       arrastando = true;
       inicioX = e.touches[0].clientX;
+      deslocamentoX = 0;
       pista.style.transition = 'none';
     }, { passive: true });
 
     pista.addEventListener('touchmove', function (e) {
       if (!arrastando) return;
+      if (!pista.offsetWidth) return;
+      if (!e.touches || !e.touches.length) return;
       deslocamentoX = e.touches[0].clientX - inicioX;
       const deslocamentoAtual = -(indiceAtual * 100) + (deslocamentoX / pista.offsetWidth * 100);
       pista.style.transform = 'translateX(' + deslocamentoAtual + '%)';
     }, { passive: true });
 
     pista.addEventListener('touchend', function () {
+      if (!arrastando) return;
       arrastando = false;
       pista.style.transition = '';
+      if (!pista.offsetWidth) {
+        irParaSlide(indiceAtual);
+        deslocamentoX = 0;
+        return;
+      }
       const limiar = pista.offsetWidth * 0.2;
       if (deslocamentoX < -limiar) {
         irParaSlide(indiceAtual + 1);
@@ -352,29 +391,32 @@
       deslocamentoX = 0;
     }, { passive: true });
 
-    /* Pausar autoplay em hover/foco + botão pausar (WCAG 2.2.2) */
+    /* Pausar autoplay em hover/foco + botão pausar/retomar (WCAG 2.2.2) */
     let intervaloAutoPlay = null;
     let emHover = false;
     let emFoco = false;
+
     function podeTocar() {
       return !pausadoManual && !emHover && !emFoco;
     }
+
     function pararAutoPlay() {
       if (intervaloAutoPlay !== null) {
         clearInterval(intervaloAutoPlay);
         intervaloAutoPlay = null;
       }
     }
+
     function iniciarAutoPlay() {
       if (!podeTocar()) {
         return;
       }
-      /* Evita acumular intervalos (mouseleave + focusout podem disparar em sequência). */
       pararAutoPlay();
       intervaloAutoPlay = setInterval(function () {
         irParaSlide(indiceAtual + 1);
       }, 5000);
     }
+
     function sincronizarAutoPlay() {
       if (podeTocar()) {
         iniciarAutoPlay();
@@ -389,8 +431,8 @@
       btnPausa.setAttribute('aria-label', pausadoManual ? 'Retomar apresentação automática' : 'Pausar apresentação automática');
       var iconePausar = btnPausa.querySelector('.icone-pausar');
       var iconeRetomar = btnPausa.querySelector('.icone-retomar');
-      /* SVGElement não reflete a propriedade `.hidden` em atributo em todos os browsers,
-         então alterna o atributo explicitamente para o CSS [hidden] funcionar. */
+      var textoPausa = btnPausa.querySelector('.carrossel__pausa-texto');
+
       if (iconePausar) {
         if (pausadoManual) iconePausar.setAttribute('hidden', '');
         else iconePausar.removeAttribute('hidden');
@@ -399,10 +441,12 @@
         if (pausadoManual) iconeRetomar.removeAttribute('hidden');
         else iconeRetomar.setAttribute('hidden', '');
       }
+      if (textoPausa) {
+        textoPausa.textContent = pausadoManual ? 'Retomar' : 'Pausar';
+      }
     }
 
     if (btnPausa) {
-      // Se o usuário prefere movimento reduzido, já nasce pausado, mas permite opt-in manual.
       if (prefersReducedMotion) {
         pausadoManual = true;
       }
@@ -414,20 +458,24 @@
       });
     }
 
-    atualizarPontos();
+    atualizarEstadoSlides();
     sincronizarAutoPlay();
+
     carrossel.addEventListener('mouseenter', function () {
       emHover = true;
       pararAutoPlay();
     });
+
     carrossel.addEventListener('mouseleave', function () {
       emHover = false;
       iniciarAutoPlay();
     });
+
     carrossel.addEventListener('focusin', function () {
       emFoco = true;
       pararAutoPlay();
     });
+
     carrossel.addEventListener('focusout', function (e) {
       if (!carrossel.contains(e.relatedTarget)) {
         emFoco = false;
@@ -435,5 +483,4 @@
       }
     });
   })();
-
 })();

@@ -4,8 +4,8 @@
   <!-- Privacidade: só Simple Analytics (anônimo, sem cookies). Sem Google Analytics. -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Sabor da Roça — loja em Rio Pequeno, São Paulo/SP, com temperos, grãos, carnes, queijos e mais, inclusive a granel.">
-  <meta name="author" content="Sabor da Roça">
+  <meta name="description" content="Casa do Norte Sabor da Roça no Rio Pequeno, São Paulo/SP. Compra a granel de temperos, farinhas, grãos, queijos, pertences para feijoada e produtos nordestinos. Somente retirada no balcão.">
+  <meta name="author" content="Casa do Norte Sabor da Roça">
   <meta name="theme-color" content="#374001">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="robots" content="index, follow">
@@ -17,81 +17,103 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-mobile-web-app-title" content="Sabor da Roça">
   <link rel="apple-touch-icon" href="./assets/icon-192.png">
+
+  <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
-  <meta property="og:site_name" content="Sabor da Roça">
-  <meta property="og:title" content="Sabor da Roça — Um pedacinho do sertão pertinho de você">
-  <meta property="og:description" content="Loja em Rio Pequeno, São Paulo/SP, com temperos, grãos, carnes, queijos e mais, inclusive a granel.">
+  <meta property="og:site_name" content="Casa do Norte Sabor da Roça">
+  <meta property="og:title" content="Casa do Norte Sabor da Roça — Compra a granel no Rio Pequeno, SP">
+  <meta property="og:description" content="Temperos, farinhas, grãos, queijos, pertences para feijoada e produtos nordestinos a granel no Rio Pequeno. Consulte no WhatsApp e retire no balcão.">
   <meta property="og:url" content="https://sabordaroca.me/">
   <meta property="og:image" content="https://sabordaroca.me/assets/og-cover.jpg">
-  <meta property="og:image:alt" content="Prateleira da loja Sabor da Roça com molhos, doces, polvilho e conservas">
+  <meta property="og:image:alt" content="Prateleira da Casa do Norte Sabor da Roça com doces, molhos, polvilho e produtos nordestinos">
   <meta property="og:image:type" content="image/jpeg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sabor da Roça — Um pedacinho do sertão pertinho de você">
-  <meta name="twitter:description" content="Loja em Rio Pequeno, São Paulo/SP, com temperos, grãos, carnes, queijos e mais, inclusive a granel.">
+  <meta name="twitter:title" content="Casa do Norte Sabor da Roça — Compra a granel no Rio Pequeno, SP">
+  <meta name="twitter:description" content="Temperos, farinhas, grãos, queijos, pertences para feijoada e produtos nordestinos a granel no Rio Pequeno. Somente retirada no balcão.">
   <meta name="twitter:image" content="https://sabordaroca.me/assets/og-cover.jpg">
-  <meta name="twitter:image:alt" content="Prateleira da loja Sabor da Roça com molhos, doces, polvilho e conservas">
-  <title>Sabor da Roça — Um pedacinho do sertão pertinho de você</title>
-  <!-- Critical CSS — renderiza header e hero sem esperar o CSS externo -->
+  <meta name="twitter:image:alt" content="Prateleira da Casa do Norte Sabor da Roça com doces, molhos, polvilho e produtos nordestinos">
+
+  <title>Casa do Norte Sabor da Roça — Compra a granel no Rio Pequeno, SP</title>
+
+  <!-- Fontes otimizadas (carregamento não-bloqueante + swap) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap">
+  </noscript>
+
+  <!-- Critical CSS — primeira dobra imediata com contraste WCAG 2.1 AA -->
   <style>
     *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth;scroll-padding-top:72px;overflow-x:clip}
-    body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;font-size:1rem;line-height:1.6;color:#5A1903;background-color:#F4E6CE;-webkit-font-smoothing:antialiased;overflow-x:hidden;overflow-x:clip}
+    html{scroll-behavior:smooth;scroll-padding-top:76px;overflow-x:clip}
+    body{font-family:'Plus Jakarta Sans','Segoe UI',system-ui,-apple-system,sans-serif;font-size:1rem;line-height:1.6;color:#5A1903;background-color:#FFF7E8;-webkit-font-smoothing:antialiased;overflow-x:hidden;overflow-x:clip}
     img{display:block;max-width:100%;height:auto}
     a{color:inherit;text-decoration:none}
     ul{list-style:none}
-    .skip-link{position:absolute;top:-100%;left:1rem;z-index:9999;padding:.75rem 1.5rem;background-color:#E86531;color:#FFF7E8;font-weight:700;font-size:1rem;border-radius:0 0 8px 8px;box-shadow:0 24px 50px rgba(90,25,3,.22);transition:top .2s ease}
+    .skip-link{position:absolute;top:-100%;left:1rem;z-index:9999;padding:.75rem 1.5rem;background-color:#B03E11;color:#FFFFFF;font-weight:700;font-size:1rem;border-radius:0 0 10px 10px;box-shadow:0 12px 28px rgba(90,25,3,.18);transition:top .2s ease}
     .skip-link:focus{top:0;outline:3px solid #E88005;outline-offset:2px}
-    .header{position:sticky;top:0;z-index:100;background-color:rgba(55,64,1,.97);color:#FFF7E8;box-shadow:0 8px 20px rgba(90,25,3,.1);border-bottom:1px solid rgba(232,128,5,.25);backdrop-filter:blur(12px)}
-    .header__container{display:flex;align-items:center;justify-content:space-between;max-width:1120px;margin:0 auto;padding:0 1.25rem;height:72px}
-    .header__logo{display:flex;flex-direction:column;line-height:1.2}
-    .header__logo-nome{font-family:Georgia,'Times New Roman',serif;font-size:1.45rem;font-weight:700;color:#FFF7E8}
-    .header__logo-sub{font-size:.75rem;opacity:.8}
+    .header{position:sticky;top:0;z-index:100;background-color:#FFF7E8;color:#5A1903;border-bottom:1px solid rgba(90,25,3,.12);box-shadow:0 4px 16px rgba(90,25,3,.06)}
+    .header__container{display:flex;align-items:center;justify-content:space-between;max-width:1160px;margin:0 auto;padding:0 1.25rem;height:76px;gap:1rem}
+    .header__logo{display:inline-flex;align-items:center;gap:.7rem;line-height:1.15}
+    .header__logo-marca{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:10px;background-color:#374001;color:#E88005;flex-shrink:0}
+    .header__logo-textos{display:flex;flex-direction:column}
+    .header__logo-nome{font-family:'Bricolage Grotesque','Trebuchet MS','Segoe UI',sans-serif;font-size:1.25rem;font-weight:800;color:#5A1903;letter-spacing:-.02em}
+    .header__logo-sub{font-size:.75rem;font-weight:600;color:#374001}
     .header__nav{display:flex;align-items:center;gap:1.5rem}
-    .header__menu{display:flex;gap:1.25rem;list-style:none}
-    .header__link{font-size:.95rem;padding:.6rem 0;color:#FFF7E8}
-    .btn--header{display:inline-flex;align-items:center;padding:.5rem 1.1rem;font-size:.9rem;font-weight:600;background-color:#FFF7E8;color:#374001;border-radius:8px;min-height:44px}
-    .hero{position:relative;isolation:isolate;overflow:hidden;background-color:#FFF7E8;background-image:radial-gradient(ellipse at 30% 50%,rgba(232,128,5,.06),transparent 50%),linear-gradient(115deg,rgba(255,247,232,.98) 0%,rgba(255,247,232,.9) 48%,rgba(244,230,206,.72) 100%);padding:3.5rem 0 4rem;min-height:60vh;display:flex;align-items:center}
-    .hero__container{display:flex;flex-direction:column;gap:2rem;max-width:1120px;width:100%;margin:0 auto;padding:0 1.25rem;align-items:center}
-    .hero__texto{text-align:center;max-width:720px;width:100%}
-    .hero__etiqueta{display:inline-block;color:#E86531;font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.75rem}
-    .hero__localizacao{display:inline-block;font-size:.9rem;color:#374001;background-color:rgba(55,64,1,.08);border:1px solid rgba(55,64,1,.15);padding:.3rem .9rem;border-radius:20px;margin-bottom:1rem;max-width:100%;line-height:1.4}
-    .hero__status{display:inline-flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:.5rem;font-size:.85rem;font-weight:600;color:#374001;background-color:rgba(55,64,1,.08);border:1px solid rgba(55,64,1,.15);padding:.3rem .9rem;border-radius:20px;margin-bottom:1rem;max-width:100%;line-height:1.4}
-    .hero__titulo{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2.15rem,5vw,4.25rem);color:#5A1903;line-height:1.2;margin-bottom:1rem}
-    .hero__subtitulo{font-size:clamp(1rem,2.5vw,1.15rem);color:#5A1903;opacity:.85;max-width:540px;margin:0 auto 2.5rem}
-    .hero__botoes{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center}
-    .hero__imagem{width:100%;max-width:380px;border-radius:16px;overflow:hidden;box-shadow:0 24px 50px rgba(90,25,3,.22);border:8px solid rgba(255,247,232,.9)}
-    .hero__status-bolinha{width:8px;height:8px;border-radius:50%;background-color:#E88005;flex-shrink:0}
-    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.8rem 1.6rem;font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;font-size:1rem;font-weight:600;border:2px solid transparent;border-radius:8px;cursor:pointer;min-height:44px;min-width:44px;text-align:center}
-    .btn--primario{background-color:#E86531;color:#FFF7E8;box-shadow:0 8px 18px rgba(232,101,49,.22)}
-    .btn--secundario{background-color:transparent;color:#E86531;border-color:#E86531}
-    .header__hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;background:none;border:none;cursor:pointer;padding:.5rem;min-height:44px;min-width:44px}
-    .header__hamburger-linha{display:block;width:24px;height:2px;background-color:#FFF7E8;border-radius:2px}
+    .header__menu{display:flex;align-items:center;gap:1.5rem}
+    .header__link{font-size:.95rem;font-weight:600;color:#5A1903;padding:.5rem 0}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.85rem 1.5rem;font-family:inherit;font-size:1rem;font-weight:700;border:2px solid transparent;border-radius:10px;cursor:pointer;min-height:46px;min-width:44px;text-align:center}
+    .btn--primario{background-color:#B03E11;color:#FFFFFF}
+    .btn--secundario{background-color:transparent;color:#5A1903;border-color:#5A1903}
+    .btn--header{padding:.55rem 1.1rem;font-size:.9rem;min-height:44px;background-color:#B03E11;color:#FFFFFF}
+    .header__hamburger{display:none;flex-direction:column;justify-content:center;align-items:center;gap:5px;background:none;border:none;cursor:pointer;padding:.5rem;min-height:44px;min-width:44px}
+    .header__hamburger-linha{display:block;width:24px;height:2.5px;background-color:#5A1903;border-radius:2px}
+    .hero{background-color:#F4E6CE;padding:1.75rem 0 2.5rem}
+    .hero__container{display:grid;grid-template-columns:1fr;gap:1.75rem;max-width:1160px;margin:0 auto;padding:0 1.25rem;align-items:center}
+    .hero__meta{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .85rem;margin-bottom:.75rem}
+    .hero__status{display:inline-flex;align-items:center;gap:.5rem;font-size:.85rem;font-weight:700;color:#374001;background-color:#FFF7E8;border:1px solid rgba(55,64,1,.2);padding:.36rem .85rem;border-radius:999px}
+    .hero__status-bolinha{width:9px;height:9px;border-radius:50%;background-color:#E88005;flex-shrink:0}
+    .hero__bairro{display:inline-flex;align-items:center;gap:.35rem;font-size:.85rem;font-weight:700;color:#A63A0F;padding:.25rem .15rem}
+    .hero__titulo{font-family:'Bricolage Grotesque','Trebuchet MS','Segoe UI',sans-serif;font-size:clamp(1.85rem,3.4vw,2.75rem);font-weight:800;color:#5A1903;line-height:1.08;letter-spacing:-.025em;margin-bottom:.75rem}
+    .hero__subtitulo{font-size:clamp(.96rem,1.45vw,1.06rem);color:#753219;max-width:520px;line-height:1.55;margin-bottom:1.25rem}
+    .hero__botoes{display:flex;flex-wrap:wrap;gap:.75rem;margin-bottom:.9rem}
+    .hero__aviso-retirada{display:inline-flex;align-items:center;gap:.45rem;font-size:.875rem;line-height:1.45;color:#374001;max-width:560px}
+    .hero__marca{display:flex;justify-content:center;align-items:center}
+    .hero__marca-card{width:min(100%,220px);padding:.6rem;border-radius:20px;background-color:#FFF7E8;border:1px solid rgba(90,25,3,.10);box-shadow:0 20px 44px rgba(90,25,3,.10)}
+    .hero__marca-card img{width:100%;height:auto;object-fit:contain;border-radius:14px}
+    @media (min-width:769px){
+      .hero__marca-card{width:min(100%,300px);padding:.75rem;border-radius:24px}
+      .hero__marca-card img{border-radius:16px}
+    }
+    @media (min-width:1024px){
+      .hero{padding:2rem 0 2.4rem}
+      .hero__container{grid-template-columns:1.15fr .85fr;gap:2.5rem}
+      .hero__marca-card{width:min(100%,330px)}
+    }
     @media (max-width:1023px){
       .header__hamburger{display:flex}
-      .header__nav{position:fixed;top:72px;left:0;bottom:0;width:100%;z-index:101;flex-direction:column;background-color:#374001;padding:2rem 1.25rem;gap:2rem;overflow-y:auto;visibility:hidden;transform:translateX(100%)}
+      .header__nav{position:fixed;top:76px;left:0;right:0;bottom:0;height:calc(100vh - 76px);height:calc(100dvh - 76px);width:100%;z-index:101;flex-direction:column;background-color:#FFF7E8;padding:2rem 1.25rem;gap:1.5rem;overflow-y:auto;visibility:hidden;transform:translateX(100%)}
       .header__nav--aberto{transform:none;visibility:visible}
-      .header__menu{flex-direction:column;gap:1rem;align-items:center}
-      .header__link{font-size:1.15rem}
-      .btn--header{width:100%;justify-content:center}
-    }
-    @media (max-width:767px){
-      .hero__botoes{flex-direction:column;width:100%}
-      .hero__botoes .btn{width:100%}
+      .header__menu{flex-direction:column;gap:.75rem;width:100%}
     }
   </style>
+
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "GroceryStore",
-      "name": "Sabor da Roça",
-      "description": "Loja em Rio Pequeno, São Paulo, com temperos, grãos, carnes, queijos e mais, inclusive a granel.",
+      "name": "Casa do Norte Sabor da Roça",
+      "alternateName": "Sabor da Roça",
+      "description": "Casa do Norte de bairro no Rio Pequeno, São Paulo/SP, especializada em compra a granel de temperos, farinhas, grãos, queijos, pertences para feijoada e produtos nordestinos. Atendimento somente com retirada no balcão.",
       "url": "https://sabordaroca.me/",
       "image": "https://sabordaroca.me/assets/og-cover.jpg",
       "telephone": "+55 11 92134-7467",
       "priceRange": "R$",
+      "paymentAccepted": "PIX, Cartão de Crédito, Cartão de Débito, Vale-Alimentação, Vale-Refeição, Dinheiro",
       "sameAs": [
         "https://www.instagram.com/saboor_da_roca/",
         "https://wa.me/5511921347467"
@@ -139,13 +161,14 @@
         },
         {
           "@type": "Review",
-          "author": { "@type": "Person", "name": "Yuri Alves" },
+          "author": { "@type": "Person", "name": "Lili Alves" },
           "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-          "reviewBody": "Ótimo atendimento, fui bem recebido e os produtos são muito bons e frescos. Recomendo!"
+          "reviewBody": "Ótimo atendimento e ótimos preços, muito bom!!"
         }
       ]
     }
   </script>
+
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -153,45 +176,59 @@
       "mainEntity": [
         {
           "@type": "Question",
+          "name": "Vocês fazem entrega ou é só retirada no balcão?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Trabalhamos somente com retirada no balcão — no momento não fazemos entregas. Você pode mandar mensagem no WhatsApp antes de vir para confirmar a disponibilidade dos itens e pedir para deixarmos tudo separado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso comprar a granel em pequenas quantidades?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pode sim! Você escolhe exatamente a quantidade que precisar — de pequenas porções de temperos e especiarias até pacotes maiores de farinhas e grãos — e pesamos tudo na hora no balcão."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "Quais formas de pagamento vocês aceitam?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Aceitamos PIX, cartão de crédito/débito, vale-alimentação/refeição e dinheiro." }
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Aceitamos PIX, cartão de crédito e débito, vale-alimentação/refeição e dinheiro diretamente no balcão."
+          }
         },
         {
           "@type": "Question",
-          "name": "Como funciona a retirada?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Fazemos retirada no balcão, faça seu pedido por WhatsApp e guardamos para você!" }
+          "name": "Qual é o horário de funcionamento e o endereço da loja?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Funcionamos de segunda a sábado, das 09h às 21h, e aos domingos, das 09h às 14h, na R. Barone Mercadante, 60 — Rio Pequeno, São Paulo/SP, CEP 05399-010."
+          }
         },
         {
           "@type": "Question",
-          "name": "Qual a área de atendimento?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Estamos atendendo em R. Barone Mercadante, 60 - Rio Pequeno, São Paulo - SP, 05399-010" }
-        },
-        {
-          "@type": "Question",
-          "name": "Vocês fazem entrega ou só retirada?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Hoje trabalhamos com retirada no balcão. Faça seu pedido pelo WhatsApp que deixamos tudo separado para você!" }
-        },
-        {
-          "@type": "Question",
-          "name": "Como funciona a compra a granel?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Você escolhe o produto e a quantidade, e pesamos na hora. Chame no WhatsApp para saber as opções do dia." }
+          "name": "Posso confirmar pelo WhatsApp o que tem disponível hoje?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Com certeza! É só chamar no WhatsApp (11) 92134-7467 perguntando pelos produtos que procura. Confirmamos na hora para você passar na loja com tranquilidade."
+          }
         }
       ]
     }
   </script>
+
   <link rel="stylesheet" href="./css/style.css">
+
   <noscript>
     <style>
-      /* Sem JS: menu empilhado no cabeçalho em vez de off-canvas (inacessível sem JS). */
-      .hero__status{display:none}
       .carrossel__pista{overflow-x:auto}
-      .carrossel__btn,.carrossel__pontos{display:none}
+      .carrossel__btn,.carrossel__controles{display:none}
       @media (max-width:1023px){
-        .header__container{flex-wrap:wrap;height:auto;min-height:72px;padding-top:.75rem;padding-bottom:.75rem;row-gap:.5rem}
+        .header__container{flex-wrap:wrap;height:auto;min-height:76px;padding-top:.75rem;padding-bottom:.75rem;row-gap:.5rem}
         .header__hamburger{display:none !important}
-        .header__nav{position:static;visibility:visible;transform:none;width:100%;flex-direction:column;align-items:stretch;gap:1rem;padding:.25rem 0 .5rem;background:transparent;overflow:visible}
-        .header__menu{flex-direction:column;align-items:flex-start;gap:.15rem}
-        .header__link{font-size:1rem}
+        .header__nav{position:static;visibility:visible;transform:none;width:100%;flex-direction:column;align-items:stretch;gap:.75rem;padding:.5rem 0;background:transparent;overflow:visible}
+        .header__menu{flex-direction:column;align-items:flex-start;gap:.25rem}
         .btn--header{justify-content:center}
       }
     </style>
@@ -201,28 +238,40 @@
 
   <a href="#conteudo-principal" class="skip-link">Pular para o conteúdo principal</a>
 
-  <!-- ========== HEADER ========== -->
+  <!-- ========== 1. HEADER FIXO (#FFF7E8) ========== -->
   <header class="header" id="header">
     <div class="header__container">
-      <a href="#inicio" class="header__logo" aria-label="Sabor da Roça — ir para o início">
-        <span class="header__logo-nome">Sabor da Roça</span>
-        <span class="header__logo-sub">Loja de bairro em Rio Pequeno</span>
+      <a href="#inicio" class="header__logo" aria-label="Casa do Norte Sabor da Roça — voltar ao início">
+        <span class="header__logo-marca" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 3v18"/>
+            <path d="M12 7c-2.8 0-5-1.8-5-4 2.8 0 5 1.8 5 4z"/>
+            <path d="M12 7c2.8 0 5-1.8 5-4-2.8 0-5 1.8-5 4z"/>
+            <path d="M12 13c-3 0-5.5-2-5.5-4.5 3 0 5.5 2 5.5 4.5z"/>
+            <path d="M12 13c3 0 5.5-2 5.5-4.5-3 0-5.5 2-5.5 4.5z"/>
+            <path d="M7 20h10"/>
+          </svg>
+        </span>
+        <span class="header__logo-textos">
+          <span class="header__logo-nome">Sabor da Roça</span>
+          <span class="header__logo-sub">Casa do Norte • Rio Pequeno</span>
+        </span>
       </a>
 
       <nav class="header__nav" id="main-nav" aria-label="Menu principal">
         <ul class="header__menu">
-          <li><a href="#inicio" class="header__link" aria-current="location">Início</a></li>
-          <li><a href="#destaques" class="header__link">Destaques</a></li>
-          <li><a href="#produtos" class="header__link">Especiais</a></li>
-          <li><a href="#sobre" class="header__link">Sobre</a></li>
-          <li><a href="#depoimentos" class="header__link">Depoimentos</a></li>
-          <li><a href="#faq" class="header__link">FAQ</a></li>
-          <li><a href="#contato" class="header__link">Contato</a></li>
+          <li><a href="#produtos" class="header__link">Produtos</a></li>
+          <li><a href="#loja" class="header__link">A Loja</a></li>
+          <li><a href="#duvidas" class="header__link">Dúvidas</a></li>
+          <li><a href="#como-chegar" class="header__link">Como Chegar</a></li>
         </ul>
-        <a href="https://wa.me/5511921347467?text=Ol%C3%A1!%20Vim%20pelo%20site%20Sabor%20da%20Ro%C3%A7a%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer" class="btn btn--header">Fale com a gente</a>
+        <a href="https://wa.me/5511921347467?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Casa%20do%20Norte%20Sabor%20da%20Ro%C3%A7a%20e%20gostaria%20de%20consultar%20disponibilidade%20para%20retirada%20no%20balc%C3%A3o." target="_blank" rel="noopener noreferrer" class="btn btn--header">
+          <svg class="btn__icone" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp
+        </a>
       </nav>
 
-      <button class="header__hamburger" id="hamburger-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+      <button class="header__hamburger" id="hamburger-btn" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
         <span class="header__hamburger-linha"></span>
         <span class="header__hamburger-linha"></span>
         <span class="header__hamburger-linha"></span>
@@ -232,398 +281,616 @@
 
   <main id="conteudo-principal">
 
-    <!-- ========== HERO ========== -->
+    <!-- ========== 2. HERO / 1ª DOBRA (#F4E6CE) ========== -->
     <section class="hero" id="inicio">
       <div class="hero__container">
         <div class="hero__texto">
-          <p class="hero__etiqueta">Sabores da roça no bairro</p>
-          <p class="hero__localizacao">📍 R. Barone Mercadante, 60 - Rio Pequeno, São Paulo - SP</p>
-          <p class="hero__status" id="status-aberto" role="status"><span class="hero__status-bolinha" aria-hidden="true"></span><span id="status-aberto-texto">Verificando horário de funcionamento…</span></p>
-          <h1 class="hero__titulo">O gosto da roça pertinho de você</h1>
-          <p class="hero__subtitulo">Temperos, grãos, carnes, queijos e mais — inclusive a granel. Passe na loja ou chame no WhatsApp.</p>
+          <div class="hero__meta">
+            <p class="hero__status" id="status-aberto" role="status">
+              <span class="hero__status-bolinha" aria-hidden="true"></span>
+              <span id="status-aberto-texto">Seg a Sáb 09h–21h • Dom 09h–14h</span>
+            </p>
+            <span class="hero__bairro">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Rio Pequeno, São Paulo/SP
+            </span>
+          </div>
+
+          <h1 class="hero__titulo">Sabor da Roça: sua Casa do Norte <span class="hero__titulo-grifo">a granel</span> no Rio Pequeno</h1>
+
+          <p class="hero__subtitulo">Queijos, pertences para feijoada, temperos, grãos e produtos nordestinos pesados na hora.</p>
+
           <div class="hero__botoes">
-            <a href="https://wa.me/5511921347467?text=Ol%C3%A1!%20Vim%20pelo%20site%20Sabor%20da%20Ro%C3%A7a%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer" class="btn btn--primario">
+            <a href="https://wa.me/5511921347467?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Casa%20do%20Norte%20Sabor%20da%20Ro%C3%A7a%20e%20gostaria%20de%20consultar%20disponibilidade%20de%20produtos%20para%20retirada%20no%20balc%C3%A3o." target="_blank" rel="noopener noreferrer" class="btn btn--primario">
               <svg class="btn__icone" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              Fale pelo WhatsApp
+              Chamar no WhatsApp
             </a>
-            <a href="https://www.instagram.com/saboor_da_roca/" target="_blank" rel="noopener noreferrer" class="btn btn--secundario">
-              <svg class="btn__icone" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-              Conheça o Instagram
+            <a href="#como-chegar" class="btn btn--secundario">
+              <svg class="btn__icone" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Ver como chegar
             </a>
           </div>
+
+          <p class="hero__aviso-retirada">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l2-5h14l2 5"/><path d="M3 9h18v11a1 1 0 01-1 1H4a1 1 0 01-1-1V9z"/><path d="M9 21v-7h6v7"/></svg>
+            <span><strong>Somente retirada no balcão</strong> (não fazemos entregas) • R. Barone Mercadante, 60</span>
+          </p>
         </div>
-        <div class="hero__imagem">
-          <img src="./assets/images/sobre.webp" alt="Logotipo Casa do Norte Sabor da Roça com ilustração do sertão" loading="eager" fetchpriority="high" decoding="async" width="533" height="800">
+
+        <div class="hero__marca">
+          <div class="hero__marca-card">
+            <img src="./assets/images/sobre.webp" alt="Emblema oficial da Casa do Norte Sabor da Roça com ilustração do sertão, árvore de ipê, casinha e chapéu de palha" loading="eager" fetchpriority="high" decoding="async" width="533" height="800">
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ========== DIFERENCIAIS ========== -->
-    <section class="diferenciais" id="destaques">
+    <!-- ========== 3. FAIXA DE DIFERENCIAIS (#374001) ========== -->
+    <section class="diferenciais" aria-label="Diferenciais da loja">
       <div class="secao__container">
-        <h2 class="secao__titulo">O que faz a diferença na Sabor da Roça</h2>
-        <p class="secao__subtitulo">Variedade de produtos, compra a granel e atendimento direto.</p>
-
-        <div class="diferenciais__grid">
-          <article class="diferencial-card">
-            <div class="diferencial-card__icone">
-              <svg viewBox="0 0 64 64" width="48" height="48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M32 4l8 16h16l-12 10 4 18-16-10-16 10 4-18L8 20h16z"/>
-              </svg>
+        <ul class="diferenciais__grid">
+          <li class="diferencial-item">
+            <span class="diferencial-item__icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M4 8h16"/><path d="M5 8l-2 6h6l-2-6z"/><path d="M19 8l-2 6h6l-2-6z"/><path d="M8 21h8"/></svg>
+            </span>
+            <div class="diferencial-item__texto">
+              <h2 class="diferencial-item__titulo">Compra a granel no peso que precisar</h2>
+              <p class="diferencial-item__desc">De pequenas porções até o abastecimento da semana, tudo pesado na hora.</p>
             </div>
-            <h3 class="diferencial-card__titulo">Variedade de produtos</h3>
-            <p class="diferencial-card__texto">Temperos, grãos, carnes, queijos e mais em um só lugar.</p>
-          </article>
+          </li>
 
-          <article class="diferencial-card">
-            <div class="diferencial-card__icone">
-              <svg viewBox="0 0 64 64" width="48" height="48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="32" cy="32" r="28"/>
-                <path d="M20 38c2-6 8-10 12-10s10 4 12 10"/>
-                <circle cx="32" cy="20" r="6"/>
-              </svg>
+          <li class="diferencial-item">
+            <span class="diferencial-item__icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l2-5h14l2 5"/><path d="M3 9h18v11a1 1 0 01-1 1H4a1 1 0 01-1-1V9z"/><path d="M9 21v-7h6v7"/></svg>
+            </span>
+            <div class="diferencial-item__texto">
+              <h2 class="diferencial-item__titulo">Retirada rápida no balcão</h2>
+              <p class="diferencial-item__desc">Atendimento direto na loja, sem espera e sem taxa de entrega.</p>
             </div>
-            <h3 class="diferencial-card__titulo">Sabores da roça</h3>
-            <p class="diferencial-card__texto">Opções para o dia a dia, para ver de perto e escolher com calma.</p>
-          </article>
+          </li>
 
-          <article class="diferencial-card">
-            <div class="diferencial-card__icone">
-              <svg viewBox="0 0 64 64" width="48" height="48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M32 56C18 46 8 36 8 24a12 12 0 0124 0 12 12 0 0124 0c0 12-10 22-24 32z"/>
-              </svg>
+          <li class="diferencial-item">
+            <span class="diferencial-item__icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3a14 14 0 010 18"/><path d="M12 3a14 14 0 000 18"/><path d="M3 12h18"/></svg>
+            </span>
+            <div class="diferencial-item__texto">
+              <h2 class="diferencial-item__titulo">Variedade direto do Norte e Nordeste</h2>
+              <p class="diferencial-item__desc">Queijos, carnes salgadas, farinhas, temperos, doces e mercearia completa.</p>
             </div>
-            <h3 class="diferencial-card__titulo">Compra a granel</h3>
-            <p class="diferencial-card__texto">Escolha o produto e a quantidade. A gente pesa na hora para você.</p>
-          </article>
+          </li>
 
-          <article class="diferencial-card">
-            <div class="diferencial-card__icone">
-              <svg viewBox="0 0 64 64" width="48" height="48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M8 52V20a4 4 0 014-4h40a4 4 0 014 4v32"/>
-                <path d="M16 52V36h32v16"/>
-                <path d="M24 28h16"/>
-              </svg>
+          <li class="diferencial-item">
+            <span class="diferencial-item__icone" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+            </span>
+            <div class="diferencial-item__texto">
+              <h2 class="diferencial-item__titulo">Tire dúvidas e consulte itens pelo WhatsApp</h2>
+              <p class="diferencial-item__desc">Confirme o que tem hoje e peça para separar antes de passar aqui.</p>
             </div>
-            <h3 class="diferencial-card__titulo">Atendimento direto</h3>
-            <p class="diferencial-card__texto">Tiramos suas dúvidas na hora, ajudamos você a escolher e atendemos com agilidade.</p>
-          </article>
-        </div>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <!-- ========== DESTAQUES / PRODUTOS ========== -->
+    <!-- ========== 4. VITRINE POR CATEGORIAS (#FFF7E8) ========== -->
     <section class="produtos" id="produtos">
       <div class="secao__container">
-        <h2 class="secao__titulo">Sabores que acolhem</h2>
-        <p class="secao__subtitulo">Veja um pouco do que tem na loja. Deslize para ver mais.</p>
-        <p class="produtos__granel"><strong>Produtos a granel</strong> — Temperos, Grãos, Carnes, Queijos e muito mais. Confira as opções pelo WhatsApp!</p>
-
-        <div class="carrossel" role="region" aria-label="Galeria de produtos" aria-roledescription="carrossel" tabindex="0">
-          <p class="sr-only" aria-live="polite" id="carrossel-status">Slide 1 de 11</p>
-          <div class="carrossel__pista">
-            <div class="carrossel__slides">
-              <div class="carrossel__slide" role="group" aria-roledescription="slide" aria-label="Slide 1 de 11">
-                <img src="./assets/images/foto1.webp" alt="Dispensers com farinhas, grãos e temperos a granel na loja Sabor da Roça" loading="lazy" decoding="async" width="449" height="800">
-              </div>
-              <div class="carrossel__slide" role="group" aria-roledescription="slide" aria-label="Slide 2 de 11" aria-hidden="true">
-                <img src="./assets/images/foto2.webp" alt="Interior da loja com prateleiras de temperos a granel e produtos empacotados" loading="lazy" decoding="async" width="449" height="800">
-              </div>
-              <div class="carrossel__slide" role="group" aria-roledescription="slide" aria-label="Slide 3 de 11" aria-hidden="true">
-                <img src="./assets/images/foto3.webp" alt="Potes transparentes com temperos, grãos e especiarias a granel" loading="lazy" decoding="async" width="449" height="800">
-              </div>
-              <div class="carrossel__slide" role="group" aria-roledescription="slide" aria-label="Slide 4 de 11" aria-hidden="true">
-                <img src="./assets/images/foto4.webp" alt="Dispensers de farinhas e temperos a granel na loja" loading="lazy" decoding="async" width="449" height="800">
-              </div>
-              <div class="carrossel__slide" role="group" aria-roledescription="slide" aria-label="Slide 5 de 11" aria-hidden="true">
-                <img src="./assets/images/foto5.webp" alt="Geladeira com bebidas e sacos de carvão de 2 kg e 5 kg à venda" loading="lazy" decoding="async" width="449" height="800">
-              </div>
-              <div class="carrossel__slide" role="group" aria-roledescription="slide" aria-label="Slide 6 de 11" aria-hidden="true">
-                <img src="./assets/images/foto6.webp" alt="Prateleira com molhos, doces, polvilho e conservas" loading="lazy" decoding="async" width="800" height="449">
-              </div>
-              <div class="carrossel__slide" role="group" aria-roledescription="slide" aria-label="Slide 7 de 11" aria-hidden="true">
-                <img src="./assets/images/foto7.webp" alt="Potes com castanhas, temperos e farinhas a granel" loading="lazy" decoding="async" width="800" height="449">
-              </div>
-              <div class="carrossel__slide" role="group" aria-roledescription="slide" aria-label="Slide 8 de 11" aria-hidden="true">
-                <img src="./assets/images/foto8.webp" alt="Fachada da loja Sabor da Roça com mesas de produtos a granel na calçada" loading="lazy" decoding="async" width="449" height="800">
-              </div>
-              <div class="carrossel__slide" role="group" aria-roledescription="slide" aria-label="Slide 9 de 11" aria-hidden="true">
-                <img src="./assets/images/foto9.webp" alt="Peça de carne bovina fresca com capa de gordura no balcão" loading="lazy" decoding="async" width="800" height="449">
-              </div>
-              <div class="carrossel__slide" role="group" aria-roledescription="slide" aria-label="Slide 10 de 11" aria-hidden="true">
-                <img src="./assets/images/foto10.webp" alt="Peças de carne bovina com marmoreio em balcão refrigerado" loading="lazy" decoding="async" width="600" height="800">
-              </div>
-              <div class="carrossel__slide" role="group" aria-roledescription="slide" aria-label="Slide 11 de 11" aria-hidden="true">
-                <img src="./assets/images/foto11.webp" alt="Queijo branco em peça inteira e metade sobre tábua de madeira" loading="lazy" decoding="async" width="800" height="600">
-              </div>
-            </div>
-          </div>
-
-          <button class="carrossel__btn carrossel__btn--anterior" aria-label="Slide anterior" type="button">
-            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
-          </button>
-          <button class="carrossel__btn carrossel__btn--proximo" aria-label="Próximo slide" type="button">
-            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
-          </button>
-          <button class="carrossel__btn carrossel__btn--pausa" aria-label="Pausar apresentação automática" aria-pressed="false" type="button">
-            <svg class="icone-pausar" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M7 5h4v14H7zM13 5h4v14h-4z"/></svg>
-            <svg class="icone-retomar" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true" hidden><path d="M8 5v14l11-7z"/></svg>
-          </button>
-
-          <div class="carrossel__pontos" role="group" aria-label="Navegação do carrossel">
-            <button class="carrossel__ponto carrossel__ponto--ativo" aria-current="true" aria-label="Ir para slide 1" data-indice="0" type="button"></button>
-            <button class="carrossel__ponto" aria-current="false" aria-label="Ir para slide 2" data-indice="1" type="button"></button>
-            <button class="carrossel__ponto" aria-current="false" aria-label="Ir para slide 3" data-indice="2" type="button"></button>
-            <button class="carrossel__ponto" aria-current="false" aria-label="Ir para slide 4" data-indice="3" type="button"></button>
-            <button class="carrossel__ponto" aria-current="false" aria-label="Ir para slide 5" data-indice="4" type="button"></button>
-            <button class="carrossel__ponto" aria-current="false" aria-label="Ir para slide 6" data-indice="5" type="button"></button>
-            <button class="carrossel__ponto" aria-current="false" aria-label="Ir para slide 7" data-indice="6" type="button"></button>
-            <button class="carrossel__ponto" aria-current="false" aria-label="Ir para slide 8" data-indice="7" type="button"></button>
-            <button class="carrossel__ponto" aria-current="false" aria-label="Ir para slide 9" data-indice="8" type="button"></button>
-            <button class="carrossel__ponto" aria-current="false" aria-label="Ir para slide 10" data-indice="9" type="button"></button>
-            <button class="carrossel__ponto" aria-current="false" aria-label="Ir para slide 11" data-indice="10" type="button"></button>
-          </div>
+        <div class="secao__cabecalho">
+          <p class="secao__etiqueta">O que você encontra na loja</p>
+          <h2 class="secao__titulo">Variedade organizada para o seu dia a dia</h2>
+          <p class="secao__subtitulo">Escolha no peso que precisar e leve na hora. Clique na categoria para consultar disponibilidade no WhatsApp antes de passar no balcão.</p>
         </div>
 
-        <p class="produtos__aviso">Consulte a Sabor da Roça para conhecer as opções disponíveis.</p>
+        <div class="categorias__grid">
 
-        <div class="produtos__cta">
-          <a href="https://wa.me/5511921347467?text=Ol%C3%A1!%20Quero%20conhecer%20as%20op%C3%A7%C3%B5es%20da%20Sabor%20da%20Ro%C3%A7a." target="_blank" rel="noopener noreferrer" class="btn btn--primario">Consultar opções no WhatsApp</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== SOBRE ========== -->
-    <section class="sobre" id="sobre">
-      <div class="sobre__container">
-        <div class="sobre__imagem">
-          <img src="./assets/images/foto8.webp" alt="Fachada da loja Sabor da Roça em Rio Pequeno com mesas de produtos a granel na calçada" loading="lazy" decoding="async" width="449" height="800">
-        </div>
-        <div class="sobre__texto">
-          <h2 class="secao__titulo">Sobre a loja</h2>
-          <p>A <strong>Sabor da Roça</strong> é uma loja de bairro em Rio Pequeno com produtos e sabores da roça, inclusive a granel.</p>
-          <p>Dá para ver de perto, escolher com calma e contar com a gente para ajudar no que precisar.</p>
-          <a href="https://wa.me/5511921347467?text=Ol%C3%A1!%20Vim%20pelo%20site%20Sabor%20da%20Ro%C3%A7a%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer" class="btn btn--primario">Saiba mais pelo WhatsApp</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== DEPOIMENTOS ========== -->
-    <section class="depoimentos" id="depoimentos">
-      <div class="secao__container">
-        <h2 class="secao__titulo">O que dizem sobre a gente</h2>
-        <p class="secao__subtitulo">Depoimentos de quem já provou e voltou.</p>
-
-        <div class="depoimentos__grid">
-          <article class="depoimento-card">
-            <div class="depoimento-card__estrelas" aria-label="5 de 5 estrelas">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <!-- CARD CATEGORIA 1: Queijos e Frios (edite título, descrição, itens ou link abaixo) -->
+          <article class="categoria-card">
+            <div class="categoria-card__topo">
+              <span class="categoria-card__icone" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l10-7 8 4v9a1 1 0 01-1 1H4a1 1 0 01-1-1v-6z"/><path d="M3 12h18"/><circle cx="9" cy="15.5" r="1"/><circle cx="15" cy="15" r="1.2"/></svg>
+              </span>
+              <span class="categoria-card__tag">Balcão refrigerado</span>
             </div>
-            <blockquote class="depoimento-card__texto">
-              "Atendimento maravilhoso! Muitas variedades de produtos e tudo sempre fresquinho! Indico com certeza."
-            </blockquote>
-            <div class="depoimento-card__autor">
-              <span class="depoimento-card__nome">Simone Lopes Ferreira</span>
-              <span class="depoimento-card__local">Avaliação no Google</span>
-            </div>
-          </article>
-
-          <article class="depoimento-card">
-            <div class="depoimento-card__estrelas" aria-label="5 de 5 estrelas">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            </div>
-            <blockquote class="depoimento-card__texto">
-              "Ótimos preços."
-            </blockquote>
-            <div class="depoimento-card__autor">
-              <span class="depoimento-card__nome">Luciano Lopes Souza</span>
-              <span class="depoimento-card__local">Avaliação no Google</span>
-            </div>
-          </article>
-
-          <article class="depoimento-card">
-            <div class="depoimento-card__estrelas" aria-label="5 de 5 estrelas">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            </div>
-            <blockquote class="depoimento-card__texto">
-              "Ótimo atendimento, fui bem recebido e os produtos são muito bons e frescos. Recomendo!"
-            </blockquote>
-            <div class="depoimento-card__autor">
-              <span class="depoimento-card__nome">Yuri Alves</span>
-              <span class="depoimento-card__local">Avaliação no Google</span>
-            </div>
-          </article>
-        </div>
-
-        <div class="depoimentos__cta">
-          <a href="https://g.page/r/CR5E3ALJFU8PEBM/review" target="_blank" rel="noopener noreferrer" class="btn btn--google">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-            </svg>
-            Avalie-nos no Google
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== FAQ ========== -->
-    <section class="faq" id="faq">
-      <div class="secao__container">
-        <h2 class="secao__titulo">Perguntas frequentes</h2>
-        <p class="secao__subtitulo">Tire suas dúvidas antes de fazer seu pedido.</p>
-
-        <div class="faq__lista">
-          <details class="faq__item">
-            <summary class="faq__pergunta">Quais formas de pagamento vocês aceitam?</summary>
-            <div class="faq__resposta">
-              <p>Aceitamos PIX, cartão de crédito/débito, vale-alimentação/refeição e dinheiro.</p>
-            </div>
-          </details>
-
-          <details class="faq__item">
-            <summary class="faq__pergunta">Como funciona a retirada?</summary>
-            <div class="faq__resposta">
-              <p>Fazemos retirada no balcão, faça seu pedido por WhatsApp e guardamos para você!</p>
-            </div>
-          </details>
-
-          <details class="faq__item">
-            <summary class="faq__pergunta">Qual a área de atendimento?</summary>
-            <div class="faq__resposta">
-              <p>Estamos atendendo em R. Barone Mercadante, 60 - Rio Pequeno, São Paulo - SP, 05399-010</p>
-            </div>
-          </details>
-
-          <details class="faq__item">
-            <summary class="faq__pergunta">Vocês fazem entrega ou só retirada?</summary>
-            <div class="faq__resposta">
-              <p>Hoje trabalhamos com retirada no balcão. Faça seu pedido pelo WhatsApp que deixamos tudo separado para você!</p>
-            </div>
-          </details>
-
-          <details class="faq__item">
-            <summary class="faq__pergunta">Como funciona a compra a granel?</summary>
-            <div class="faq__resposta">
-              <p>Você escolhe o produto e a quantidade, e pesamos na hora. Chame no WhatsApp para saber as opções do dia.</p>
-            </div>
-          </details>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== CONTATO ========== -->
-    <section class="contato" id="contato">
-      <div class="secao__container">
-        <h2 class="secao__titulo">Vamos conversar?</h2>
-        <p class="secao__subtitulo">Fale com a gente pelo WhatsApp ou Instagram.</p>
-
-        <div class="contato__grid">
-          <div class="info-card">
-            <div class="info-card__icone">
-              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <circle cx="12" cy="12" r="10"/>
-                <polyline points="12 6 12 12 16 14"/>
-              </svg>
-            </div>
-            <h3 class="info-card__titulo">Horário de atendimento</h3>
-            <div class="horario">
-              <div class="horario__linha">
-                <span class="horario__dia">Segunda a sábado</span>
-                <span class="horario__pontos"></span>
-                <span class="horario__hora">09:00 às 21:00</span>
-              </div>
-              <div class="horario__linha">
-                <span class="horario__dia">Domingo</span>
-                <span class="horario__pontos"></span>
-                <span class="horario__hora">09:00 às 14:00</span>
-              </div>
-            </div>
-            <p class="info-card__nota">Retirada no balcão. Faça seu pedido pelo WhatsApp!</p>
-          </div>
-
-          <div class="info-card">
-            <div class="info-card__icone">
-              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                <circle cx="12" cy="10" r="3"/>
-              </svg>
-            </div>
-            <h3 class="info-card__titulo">Onde estamos</h3>
-            <p class="info-card__texto">R. Barone Mercadante, 60 - Rio Pequeno, São Paulo - SP, 05399-010</p>
-            <a href="https://maps.app.goo.gl/DxqLyrvYUpD4UkJU8" target="_blank" rel="noopener noreferrer" class="btn btn--maps">
-              <svg class="btn__icone" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>
-              Ver localização no Google Maps
+            <h3 class="categoria-card__titulo">Queijos e Frios</h3>
+            <p class="categoria-card__itens">Queijos variados inteiros ou fracionados na hora, manteiga de garrafa e itens de balcão bem conservados.</p>
+            <ul class="categoria-card__lista">
+              <li>Queijo coalho</li>
+              <li>Minas fresco</li>
+              <li>Manteiga de garrafa</li>
+            </ul>
+            <a href="https://wa.me/5511921347467?text=Ol%C3%A1!%20Vi%20a%20categoria%20Queijos%20e%20Frios%20no%20site%20da%20Sabor%20da%20Ro%C3%A7a%20e%20gostaria%20de%20consultar%20disponibilidade%20para%20retirada%20no%20balc%C3%A3o." target="_blank" rel="noopener noreferrer" class="categoria-card__link">
+              <span>Consultar no WhatsApp</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
             </a>
+          </article>
+
+          <!-- CARD CATEGORIA 2: Pertences para Feijoada (edite título, descrição, itens ou link abaixo) -->
+          <article class="categoria-card">
+            <div class="categoria-card__topo">
+              <span class="categoria-card__icone" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11h16v3a6 6 0 01-6 6h-4a6 6 0 01-6-6v-3z"/><path d="M2 11h20"/><path d="M9 7c0-1.2 1-1.8 1-3"/><path d="M14 7c0-1.2 1-1.8 1-3"/></svg>
+              </span>
+              <span class="categoria-card__tag">Por peso</span>
+            </div>
+            <h3 class="categoria-card__titulo">Pertences para Feijoada</h3>
+            <p class="categoria-card__itens">Carnes salgadas selecionadas e acompanhamentos no peso certo para montar uma feijoada completa e farta.</p>
+            <ul class="categoria-card__lista">
+              <li>Carne seca</li>
+              <li>Charque</li>
+              <li>Carnes salgadas</li>
+            </ul>
+            <a href="https://wa.me/5511921347467?text=Ol%C3%A1!%20Vi%20a%20categoria%20Pertences%20para%20Feijoada%20no%20site%20da%20Sabor%20da%20Ro%C3%A7a%20e%20gostaria%20de%20consultar%20disponibilidade%20para%20retirada%20no%20balc%C3%A3o." target="_blank" rel="noopener noreferrer" class="categoria-card__link">
+              <span>Consultar no WhatsApp</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+            </a>
+          </article>
+
+          <!-- CARD CATEGORIA 3: Temperos e Especiarias a Granel (edite título, descrição, itens ou link abaixo) -->
+          <article class="categoria-card">
+            <div class="categoria-card__topo">
+              <span class="categoria-card__icone" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 014 13c0-5 7-10 15-10 0 8-3 17-8 17z"/><path d="M4 20l6-6"/></svg>
+              </span>
+              <span class="categoria-card__tag">A granel</span>
+            </div>
+            <h3 class="categoria-card__titulo">Temperos e Especiarias a Granel</h3>
+            <p class="categoria-card__itens">Temperos secos, ervas aromáticas, pimentas e condimentos pesados na hora em qualquer quantidade.</p>
+            <ul class="categoria-card__lista">
+              <li>Páprica e colorau</li>
+              <li>Açafrão e louro</li>
+              <li>Pimentas e ervas</li>
+            </ul>
+            <a href="https://wa.me/5511921347467?text=Ol%C3%A1!%20Vi%20a%20categoria%20Temperos%20e%20Especiarias%20a%20Granel%20no%20site%20da%20Sabor%20da%20Ro%C3%A7a%20e%20gostaria%20de%20consultar%20disponibilidade%20para%20retirada%20no%20balc%C3%A3o." target="_blank" rel="noopener noreferrer" class="categoria-card__link">
+              <span>Consultar no WhatsApp</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+            </a>
+          </article>
+
+          <!-- CARD CATEGORIA 4: Grãos, Farinhas e Cereais (edite título, descrição, itens ou link abaixo) -->
+          <article class="categoria-card">
+            <div class="categoria-card__topo">
+              <span class="categoria-card__icone" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18"/><path d="M12 8c-3 0-5-2-5-4.5 3 0 5 2 5 4.5z"/><path d="M12 8c3 0 5-2 5-4.5-3 0-5 2-5 4.5z"/><path d="M12 14c-3 0-5.5-2-5.5-4.5 3 0 5.5 2 5.5 4.5z"/><path d="M12 14c3 0 5.5-2 5.5-4.5-3 0-5.5 2-5.5 4.5z"/></svg>
+              </span>
+              <span class="categoria-card__tag">A granel</span>
+            </div>
+            <h3 class="categoria-card__titulo">Grãos, Farinhas e Cereais</h3>
+            <p class="categoria-card__itens">Feijões variados, farinhas fresquinhas de mandioca e milho, polvilho e cereais selecionados por peso.</p>
+            <ul class="categoria-card__lista">
+              <li>Farinha de mandioca</li>
+              <li>Feijões e milho</li>
+              <li>Polvilho e farinha biju</li>
+            </ul>
+            <a href="https://wa.me/5511921347467?text=Ol%C3%A1!%20Vi%20a%20categoria%20Gr%C3%A3os%2C%20Farinhas%20e%20Cereais%20no%20site%20da%20Sabor%20da%20Ro%C3%A7a%20e%20gostaria%20de%20consultar%20disponibilidade%20para%20retirada%20no%20balc%C3%A3o." target="_blank" rel="noopener noreferrer" class="categoria-card__link">
+              <span>Consultar no WhatsApp</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+            </a>
+          </article>
+
+          <!-- CARD CATEGORIA 5: Produtos Nordestinos (edite título, descrição, itens ou link abaixo) -->
+          <article class="categoria-card">
+            <div class="categoria-card__topo">
+              <span class="categoria-card__icone" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v3"/><path d="M12 19v3"/><path d="M4.93 4.93l2.12 2.12"/><path d="M16.95 16.95l2.12 2.12"/><path d="M2 12h3"/><path d="M19 12h3"/><path d="M4.93 19.07l2.12-2.12"/><path d="M16.95 7.05l2.12-2.12"/></svg>
+              </span>
+              <span class="categoria-card__tag">Típicos</span>
+            </div>
+            <h3 class="categoria-card__titulo">Produtos Nordestinos</h3>
+            <p class="categoria-card__itens">Sabores tradicionais direto do Norte e Nordeste para manter a receita de família com gosto de verdade.</p>
+            <ul class="categoria-card__lista">
+              <li>Tapioca e flocão</li>
+              <li>Carne de sol</li>
+              <li>Azeite de dendê e castanhas</li>
+            </ul>
+            <a href="https://wa.me/5511921347467?text=Ol%C3%A1!%20Vi%20a%20categoria%20Produtos%20Nordestinos%20no%20site%20da%20Sabor%20da%20Ro%C3%A7a%20e%20gostaria%20de%20consultar%20disponibilidade%20para%20retirada%20no%20balc%C3%A3o." target="_blank" rel="noopener noreferrer" class="categoria-card__link">
+              <span>Consultar no WhatsApp</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+            </a>
+          </article>
+
+          <!-- CARD CATEGORIA 6: Doces e Mercearia (edite título, descrição, itens ou link abaixo) -->
+          <article class="categoria-card">
+            <div class="categoria-card__topo">
+              <span class="categoria-card__icone" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4h10"/><path d="M8 4v2.5A2.5 2.5 0 006 9v9a3 3 0 003 3h6a3 3 0 003-3V9a2.5 2.5 0 00-2-2.5V4"/><path d="M6 12h12"/></svg>
+              </span>
+              <span class="categoria-card__tag">Mercearia</span>
+            </div>
+            <h3 class="categoria-card__titulo">Doces e Mercearia</h3>
+            <p class="categoria-card__itens">Doces típicos em pote e barra, molhos de pimenta, mel, conservas, biscoitos e complementos do dia a dia.</p>
+            <ul class="categoria-card__lista">
+              <li>Rapadura e bananada</li>
+              <li>Doce de leite e cocada</li>
+              <li>Mel, molhos e conservas</li>
+            </ul>
+            <a href="https://wa.me/5511921347467?text=Ol%C3%A1!%20Vi%20a%20categoria%20Doces%20e%20Mercearia%20no%20site%20da%20Sabor%20da%20Ro%C3%A7a%20e%20gostaria%20de%20consultar%20disponibilidade%20para%20retirada%20no%20balc%C3%A3o." target="_blank" rel="noopener noreferrer" class="categoria-card__link">
+              <span>Consultar no WhatsApp</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+            </a>
+          </article>
+
+        </div>
+
+        <div class="produtos__faixa-cta">
+          <div class="produtos__faixa-texto">
+            <strong>Procurando algum item específico?</strong>
+            <p>Nosso estoque gira todo dia. Confirme pelo WhatsApp e passe no balcão para retirar sem perder viagem.</p>
+          </div>
+          <a href="https://wa.me/5511921347467?text=Ol%C3%A1!%20Gostaria%20de%20confirmar%20se%20voc%C3%AAs%20t%C3%AAm%20alguns%20itens%20dispon%C3%ADveis%20hoje%20para%20retirada%20no%20balc%C3%A3o." target="_blank" rel="noopener noreferrer" class="btn btn--primario">
+            Consultar itens no WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 5. A LOJA POR DENTRO + CARROSSEL (#F4E6CE) ========== -->
+    <section class="loja" id="loja">
+      <div class="secao__container">
+        <div class="loja__grid">
+          <div class="loja__conteudo">
+            <p class="secao__etiqueta secao__etiqueta--esquerda">A loja por dentro</p>
+            <h2 class="secao__titulo secao__titulo--esquerda">Casa do Norte de bairro, organizada e cheia de variedade</h2>
+            <p class="loja__paragrafo">Aqui na <strong>Casa do Norte Sabor da Roça</strong>, no Rio Pequeno, a ideia é simples: você entra, vê tudo de perto em potes transparentes e identificados, sente o aroma dos temperos e escolhe a quantidade exata que precisa levar para casa.</p>
+            <p class="loja__paragrafo">Seja para garantir o tempero da semana, montar a feijoada de sábado ou matar a saudade de uma boa farinha nordestina, nosso atendimento é direto no balcão — rápido, organizado e sem complicação.</p>
+
+            <ul class="loja__lista">
+              <li>
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Dispensers identificados com preço por peso e validade</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Sem quantidade mínima: leve 50 g ou 5 kg</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                <span>Somente retirada no balcão — separamos seu pedido pelo WhatsApp</span>
+              </li>
+            </ul>
+
+            <div class="loja__acoes">
+              <a href="https://www.instagram.com/saboor_da_roca/" target="_blank" rel="noopener noreferrer" class="btn btn--secundario">
+                <svg class="btn__icone" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+                Ver novidades no Instagram
+              </a>
+            </div>
+          </div>
+
+          <div class="loja__galeria">
+            <div class="carrossel" role="region" aria-label="Galeria de fotos da loja Sabor da Roça" aria-roledescription="carrossel" tabindex="0">
+              <p class="sr-only" aria-live="polite" id="carrossel-status">Slide 1 de 4</p>
+
+              <div class="carrossel__palco">
+                <div class="carrossel__pista">
+                  <div class="carrossel__slides">
+                    <figure class="carrossel__slide" role="group" aria-roledescription="slide" aria-label="Slide 1 de 4">
+                      <img src="./assets/images/foto6.webp" alt="Prateleira abastecida da Casa do Norte Sabor da Roça com doces típicos, molhos de pimenta, mel, leite de coco, azeite de dendê e biscoitos" loading="lazy" decoding="async" width="800" height="449">
+                      <figcaption class="carrossel__legenda">Prateleira abastecida com doces típicos, molhos, mel, conservas e mercearia nordestina</figcaption>
+                    </figure>
+                    <figure class="carrossel__slide" role="group" aria-roledescription="slide" aria-label="Slide 2 de 4" aria-hidden="true">
+                      <img src="./assets/images/foto11.webp" alt="Queijo branco em peça inteira e metade embalados sobre tábua de madeira" loading="lazy" decoding="async" width="800" height="600">
+                      <figcaption class="carrossel__legenda">Queijos frescos inteiros ou fracionados na hora no balcão</figcaption>
+                    </figure>
+                    <figure class="carrossel__slide" role="group" aria-roledescription="slide" aria-label="Slide 3 de 4" aria-hidden="true">
+                      <img src="./assets/images/foto10.webp" alt="Peças de carne seca fatiadas com marmoreio para feijoada" loading="lazy" decoding="async" width="600" height="800">
+                      <figcaption class="carrossel__legenda">Carne seca e pertences caprichados para feijoada</figcaption>
+                    </figure>
+                    <figure class="carrossel__slide" role="group" aria-roledescription="slide" aria-label="Slide 4 de 4" aria-hidden="true">
+                      <img src="./assets/images/foto9.webp" alt="Peça de carne bovina curada e salgada no balcão da loja" loading="lazy" decoding="async" width="800" height="449">
+                      <figcaption class="carrossel__legenda">Carnes salgadas e peças selecionadas no balcão</figcaption>
+                    </figure>
+                  </div>
+                </div>
+
+                <button class="carrossel__btn carrossel__btn--anterior" aria-label="Foto anterior" type="button">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>
+                </button>
+                <button class="carrossel__btn carrossel__btn--proximo" aria-label="Próxima foto" type="button">
+                  <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+              </div>
+
+              <div class="carrossel__controles">
+                <span class="carrossel__contador" id="carrossel-contador" aria-hidden="true">1 / 4</span>
+
+                <div class="carrossel__pontos" role="group" aria-label="Escolher foto da galeria">
+                  <button class="carrossel__ponto carrossel__ponto--ativo" aria-current="true" aria-label="Ir para foto 1" data-indice="0" type="button"></button>
+                  <button class="carrossel__ponto" aria-current="false" aria-label="Ir para foto 2" data-indice="1" type="button"></button>
+                  <button class="carrossel__ponto" aria-current="false" aria-label="Ir para foto 3" data-indice="2" type="button"></button>
+                  <button class="carrossel__ponto" aria-current="false" aria-label="Ir para foto 4" data-indice="3" type="button"></button>
+                </div>
+
+                <button class="carrossel__pausa" aria-label="Pausar apresentação automática" aria-pressed="false" type="button">
+                  <svg class="icone-pausar" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+                  <svg class="icone-retomar" viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true" hidden><path d="M8 5v14l11-7z"/></svg>
+                  <span class="carrossel__pausa-texto">Pausar</span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="contato__mapa">
-          <iframe
-            title="Mapa de localização da Sabor da Roça — R. Barone Mercadante, 60 - Rio Pequeno, São Paulo - SP"
-            src="https://www.google.com/maps?q=R.+Barone+Mercadante,+60+-+Rio+Pequeno,+S%C3%A3o+Paulo+-+SP,+05399-010&output=embed"
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-            allowfullscreen>
-          </iframe>
+    <!-- ========== 6. AVALIAÇÕES DE CLIENTES (#5A1903) ========== -->
+    <section class="avaliacoes" id="avaliacoes">
+      <div class="secao__container">
+        <div class="secao__cabecalho secao__cabecalho--escuro">
+          <div class="avaliacoes__nota-badge">
+            <span class="avaliacoes__estrelas-badge" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </span>
+            <span>Nota 5,0 no Google Maps</span>
+          </div>
+          <h2 class="secao__titulo secao__titulo--claro">Quem compra no balcão recomenda</h2>
+          <p class="secao__subtitulo secao__subtitulo--claro">Opiniões reais de vizinhos e clientes que já passaram pela Sabor da Roça.</p>
         </div>
 
-        <div class="contato__divisor" aria-hidden="true"></div>
+        <div class="avaliacoes__grid">
+          <article class="avaliacao-card">
+            <div class="avaliacao-card__estrelas" aria-label="Avaliação 5 de 5 estrelas">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <blockquote class="avaliacao-card__texto">
+              “Atendimento maravilhoso! Muitas variedades de produtos e tudo sempre fresquinho! Indico com certeza.”
+            </blockquote>
+            <footer class="avaliacao-card__autor">
+              <strong class="avaliacao-card__nome">Simone Lopes Ferreira</strong>
+              <span class="avaliacao-card__origem">Avaliação verificada no Google</span>
+            </footer>
+          </article>
 
-        <div class="contato__botoes">
-          <a href="https://wa.me/5511921347467?text=Ol%C3%A1!%20Vim%20pelo%20site%20Sabor%20da%20Ro%C3%A7a%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp">
-            <svg class="btn__icone" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-            Falar pelo WhatsApp
+          <article class="avaliacao-card">
+            <div class="avaliacao-card__estrelas" aria-label="Avaliação 5 de 5 estrelas">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <blockquote class="avaliacao-card__texto">
+              “Ótimos preços.”
+            </blockquote>
+            <footer class="avaliacao-card__autor">
+              <strong class="avaliacao-card__nome">Luciano Lopes Souza</strong>
+              <span class="avaliacao-card__origem">Avaliação verificada no Google</span>
+            </footer>
+          </article>
+
+          <article class="avaliacao-card">
+            <div class="avaliacao-card__estrelas" aria-label="Avaliação 5 de 5 estrelas">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <blockquote class="avaliacao-card__texto">
+              “Ótimo atendimento e ótimos preços, muito bom!!”
+            </blockquote>
+            <footer class="avaliacao-card__autor">
+              <strong class="avaliacao-card__nome">Lili Alves</strong>
+              <span class="avaliacao-card__origem">Avaliação verificada no Google</span>
+            </footer>
+          </article>
+        </div>
+
+        <div class="avaliacoes__acoes">
+          <a href="https://maps.app.goo.gl/DxqLyrvYUpD4UkJU8" target="_blank" rel="noopener noreferrer" class="btn btn--claro-escuro">
+            Ver avaliações no Google Maps
           </a>
-          <a href="https://www.instagram.com/saboor_da_roca/" target="_blank" rel="noopener noreferrer" class="btn btn--instagram">
-            <svg class="btn__icone" viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-            Siga no Instagram
+          <a href="https://g.page/r/CR5E3ALJFU8PEBM/review" target="_blank" rel="noopener noreferrer" class="btn btn--dourado">
+            <svg class="btn__icone" viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Avaliar a loja no Google
           </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 7. DÚVIDAS FREQUENTES — FAQ (#FFF7E8) ========== -->
+    <section class="faq" id="duvidas">
+      <div class="secao__container">
+        <div class="faq__grid">
+          <div class="faq__intro">
+            <p class="secao__etiqueta secao__etiqueta--esquerda">Tire suas dúvidas</p>
+            <h2 class="secao__titulo secao__titulo--esquerda">Dúvidas frequentes</h2>
+            <p class="faq__desc">Informações rápidas sobre compra a granel, formas de pagamento, horários e como funciona nossa retirada no balcão.</p>
+
+            <div class="faq__atalho">
+              <h3 class="faq__atalho-titulo">Quer confirmar se tem um item hoje?</h3>
+              <p class="faq__atalho-texto">Mande uma mensagem rápida no WhatsApp. Respondemos com a disponibilidade e deixamos separado para você retirar no balcão.</p>
+              <a href="https://wa.me/5511921347467?text=Ol%C3%A1!%20Tenho%20uma%20d%C3%BAvida%20sobre%20produtos%20na%20Casa%20do%20Norte%20Sabor%20da%20Ro%C3%A7a." target="_blank" rel="noopener noreferrer" class="btn btn--primario btn--bloco">
+                <svg class="btn__icone" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Perguntar no WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div class="faq__lista">
+            <details class="faq__item" open>
+              <summary class="faq__pergunta">Vocês fazem entrega ou é só retirada no balcão?</summary>
+              <div class="faq__resposta">
+                <p>Trabalhamos <strong>somente com retirada no balcão</strong> — no momento não fazemos entregas. Você pode mandar mensagem no WhatsApp antes de vir para confirmar a disponibilidade dos itens e pedir para deixarmos tudo separado.</p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__pergunta">Posso comprar a granel em pequenas quantidades?</summary>
+              <div class="faq__resposta">
+                <p>Pode sim! Você escolhe exatamente a quantidade que precisar — de pequenas porções de temperos e especiarias até pacotes maiores de farinhas e grãos — e pesamos tudo na hora no balcão.</p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__pergunta">Quais formas de pagamento vocês aceitam?</summary>
+              <div class="faq__resposta">
+                <p>Aceitamos PIX, cartão de crédito e débito, vale-alimentação/refeição e dinheiro diretamente no balcão.</p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__pergunta">Qual é o horário de funcionamento e o endereço da loja?</summary>
+              <div class="faq__resposta">
+                <p>Funcionamos de <strong>segunda a sábado, das 09h às 21h</strong>, e aos <strong>domingos, das 09h às 14h</strong>, na R. Barone Mercadante, 60 — Rio Pequeno, São Paulo/SP, CEP 05399-010.</p>
+              </div>
+            </details>
+
+            <details class="faq__item">
+              <summary class="faq__pergunta">Posso confirmar pelo WhatsApp o que tem disponível hoje?</summary>
+              <div class="faq__resposta">
+                <p>Com certeza! É só chamar no WhatsApp <strong>(11) 92134-7467</strong> perguntando pelos produtos que procura. Confirmamos na hora para você passar na loja com tranquilidade.</p>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== 8. ONDE ESTAMOS E HORÁRIOS (#F4E6CE) ========== -->
+    <section class="localizacao" id="como-chegar">
+      <div class="secao__container">
+        <div class="localizacao__grid">
+          <div class="localizacao__info">
+            <p class="secao__etiqueta secao__etiqueta--esquerda">Venha nos visitar</p>
+            <h2 class="secao__titulo secao__titulo--esquerda">Onde estamos e horários</h2>
+
+            <div class="localizacao__card">
+              <p class="localizacao__destaque-retirada">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l2-5h14l2 5"/><path d="M3 9h18v11a1 1 0 01-1 1H4a1 1 0 01-1-1V9z"/><path d="M9 21v-7h6v7"/></svg>
+                <span>Retirada no balcão • Não fazemos entregas</span>
+              </p>
+
+              <div class="localizacao__bloco">
+                <h3 class="localizacao__subtitulo">Endereço</h3>
+                <address class="localizacao__endereco">
+                  R. Barone Mercadante, 60<br>
+                  Rio Pequeno, São Paulo - SP<br>
+                  CEP 05399-010
+                </address>
+              </div>
+
+              <div class="localizacao__bloco">
+                <h3 class="localizacao__subtitulo">Horário de funcionamento</h3>
+                <table class="horario-tabela">
+                  <caption class="sr-only">Horários de funcionamento da Casa do Norte Sabor da Roça</caption>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Segunda a sábado</th>
+                      <td>09:00 às 21:00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Domingo</th>
+                      <td>09:00 às 14:00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="localizacao__bloco">
+                <h3 class="localizacao__subtitulo">Pagamentos no balcão</h3>
+                <p class="localizacao__pagamentos">PIX, cartão de crédito e débito, vale-alimentação/refeição e dinheiro.</p>
+              </div>
+
+              <div class="localizacao__botoes">
+                <a href="https://maps.app.goo.gl/DxqLyrvYUpD4UkJU8" target="_blank" rel="noopener noreferrer" class="btn btn--verde">
+                  <svg class="btn__icone" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>
+                  Abrir rota no Google Maps
+                </a>
+                <a href="https://wa.me/5511921347467?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Casa%20do%20Norte%20Sabor%20da%20Ro%C3%A7a%20e%20quero%20tirar%20uma%20d%C3%BAvida%20antes%20de%20passar%20na%20loja." target="_blank" rel="noopener noreferrer" class="btn btn--primario">
+                  <svg class="btn__icone" viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                  Chamar no WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="localizacao__mapa">
+            <iframe
+              title="Mapa de localização da Casa do Norte Sabor da Roça — R. Barone Mercadante, 60 - Rio Pequeno, São Paulo - SP"
+              src="https://www.google.com/maps?q=R.+Barone+Mercadante,+60+-+Rio+Pequeno,+S%C3%A3o+Paulo+-+SP,+05399-010&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen>
+            </iframe>
+          </div>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- ========== FOOTER ========== -->
+  <!-- ========== 9. RODAPÉ (#374001) ========== -->
   <footer class="footer">
-    <div class="footer__container">
-      <div class="footer__logo">
-        <span class="footer__logo-nome">Sabor da Roça</span>
-        <p class="footer__frase">Um pedacinho do sertão pertinho de você.</p>
+    <div class="secao__container">
+      <div class="footer__grid">
+        <div class="footer__marca">
+          <a href="#inicio" class="footer__logo">
+            <span class="footer__logo-nome">Casa do Norte Sabor da Roça</span>
+          </a>
+          <p class="footer__resumo">Casa do Norte de bairro no Rio Pequeno. Compra a granel no peso que precisar, com variedade do Norte e Nordeste e retirada rápida no balcão.</p>
+        </div>
+
+        <nav class="footer__col" aria-label="Navegação do rodapé">
+          <h2 class="footer__titulo">Navegação</h2>
+          <ul class="footer__lista">
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#loja">A Loja</a></li>
+            <li><a href="#avaliacoes">Avaliações</a></li>
+            <li><a href="#duvidas">Dúvidas Frequentes</a></li>
+            <li><a href="#como-chegar">Como Chegar</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__col">
+          <h2 class="footer__titulo">Contato e Endereço</h2>
+          <ul class="footer__lista">
+            <li>
+              <a href="https://wa.me/5511921347467?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Casa%20do%20Norte%20Sabor%20da%20Ro%C3%A7a%20e%20gostaria%20de%20consultar%20disponibilidade%20para%20retirada%20no%20balc%C3%A3o." target="_blank" rel="noopener noreferrer">
+                WhatsApp: (11) 92134-7467
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/saboor_da_roca/" target="_blank" rel="noopener noreferrer">
+                Instagram: @saboor_da_roca
+              </a>
+            </li>
+            <li class="footer__endereco">
+              R. Barone Mercadante, 60 — Rio Pequeno, São Paulo/SP, 05399-010
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="footer__links">
-        <a href="https://wa.me/5511921347467?text=Ol%C3%A1!%20Vim%20pelo%20site%20Sabor%20da%20Ro%C3%A7a%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer" aria-label="Fale com a Sabor da Roça no WhatsApp">
-          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-        </a>
-        <a href="https://www.instagram.com/saboor_da_roca/" target="_blank" rel="noopener noreferrer" aria-label="Siga a Sabor da Roça no Instagram">
-          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-        </a>
+
+      <div class="footer__base">
+        <p class="footer__copy">&copy; <span id="footer-ano"></span> Casa do Norte Sabor da Roça. Todos os direitos reservados.</p>
+        <p class="footer__privacidade">Medição anônima de visitas, sem cookies.</p>
+        <p class="footer__credito">
+          Site desenvolvido por
+          <a href="https://wa.me/5511943472603?text=Ol%C3%A1%20Yuri!%20Vi%20o%20site%20da%20Sabor%20da%20Ro%C3%A7a%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20neg%C3%B3cio." target="_blank" rel="noopener noreferrer">Yuri Alves</a>
+        </p>
       </div>
-      <p class="footer__copy">&copy; <span id="footer-ano"></span> Sabor da Roça. Todos os direitos reservados.</p>
-      <p class="footer__privacidade">Medição anônima de visitas, sem cookies.</p>
-      <p class="footer__credito">
-        Site desenvolvido por
-        <a href="https://wa.me/5511943472603?text=Ol%C3%A1%20Yuri!%20Vi%20o%20site%20da%20Sabor%20da%20Ro%C3%A7a%20e%20gostaria%20de%20um%20or%C3%A7amento%20para%20o%20meu%20neg%C3%B3cio." target="_blank" rel="noopener noreferrer">Yuri Alves</a>
-      </p>
     </div>
   </footer>
 
-  <a href="https://wa.me/5511921347467?text=Ol%C3%A1!%20Vim%20pelo%20site%20Sabor%20da%20Ro%C3%A7a%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noopener noreferrer" class="whatsapp-flutuante" aria-label="Conversar com a Sabor da Roça no WhatsApp">
-    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-  </a>
+  <!-- ========== 10. BARRA FIXA MOBILE ========== -->
+  <nav class="barra-mobile" aria-label="Atalhos rápidos">
+    <a href="https://wa.me/5511921347467?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Casa%20do%20Norte%20Sabor%20da%20Ro%C3%A7a%20e%20gostaria%20de%20consultar%20disponibilidade%20para%20retirada%20no%20balc%C3%A3o." target="_blank" rel="noopener noreferrer" class="barra-mobile__btn barra-mobile__btn--whatsapp">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span>WhatsApp</span>
+    </a>
+    <a href="#como-chegar" class="barra-mobile__btn barra-mobile__btn--mapa">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span>Como chegar</span>
+    </a>
+  </nav>
 
   <script src="./js/script.js" defer></script>
   <!-- 100% privacy-first analytics -->

@@ -1,0 +1,8 @@
+# Backups locais de imagens (nunca versionar)
+backup_images/
+
+# Arquivos temporários de sistema / Python
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
